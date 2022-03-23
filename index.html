@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from hkoikl.web.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 19:59:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="ico/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ico/font-awesome-5/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>CryptoBot: The Challenge</title>
+</head>
+
+<body>
+    <div class="open-nav" onclick="openNav()">
+        <i class="fa fa-chevron-right"></i>
+    </div>
+
+    <section class="sidebar">
+        <div class="sidebar-box" id="dashboard">
+            <div class="top-content">
+                <div class="logo-area">
+                    <a href="dashboard.html">
+                        <img src="img/logo-icon.png" alt="logo">
+                        <img src="img/crytobot%20img.png" alt="logo-text">
+                    </a>
+                </div>
+
+                <a class="slide-icon close-nav" href="javascript:void(0)" onclick="closeNav()">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+            </div>
+
+            <div class="mid-content">
+                <div class="sidebar-tabs">
+                    <div class="upper-tab">
+                        <a href="#" class="tab-link">
+                            <img src="img/nav-icon%20(6).png" alt="" id="img-active">
+                            <span>Overview</span>
+                        </a>
+                    </div>
+
+                    <div class="middle-tabs">
+                        <ul>
+                            <li>
+                                <a href="#" class="tab-link">
+                                    <img src="img/nav-icon%20(7).png" alt="">
+                                    <span>Buys</span>
+                                    <small class="tab-badge">14</small>
+                                    <em>&bull;</em>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tab-link">
+                                    <img src="img/nav-icon%20(1).png" alt="">
+                                    <span>Pairs</span>
+                                    <small class="tab-badge">140</small>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tab-link">
+                                    <img src="img/nav-icon%20(2).png" alt="">
+                                    <span>DCA</span>
+                                    <small class="tab-badge">36</small>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tab-link">
+                                    <img src="img/nav-icon%20(3).png" alt="">
+                                    <span>Pending</span>
+                                    <small class="tab-badge">45</small>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tab-link">
+                                    <img src="img/nav-icon%20(4).png" alt="">
+                                    <span>Sales</span>
+                                    <small class="tab-badge">396</small>
+                                    <em>&bull;</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lower-tab">
+                        <a href="#" class="tab-link">
+                            <img src="img/nav-icon%20(5).png" alt="">
+                            <span>Dust</span>
+                            <small class="tab-badge">33</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="down-content">
+                <div class="bot-config">
+                    <div class="icon-area">
+                        <img src="img/bot-config.jpg" alt="">
+                    </div>
+                    <div class="desc-area">
+                        <b>Bot Configuration</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="dashboard-view">
+        <section class="first-tabs">
+            <div class="left-side">
+                <div class="inner-tab">
+                    <span>Balance:</span>
+                    <strong>5.315</strong>
+                </div>
+
+                <div class="inner-tab">
+                    <span>TCV:</span>
+                    <strong>4.341</strong>
+                </div>
+
+                <div class="inner-tab">
+                    <span>TPV:</span>
+                    <strong>5.336</strong>
+                </div>
+
+                <div class="inner-tab">
+                    <span>BTC:</span>
+                    <strong>$10,759</strong>
+                </div>
+
+                <div class="inner-tab">
+                    <span><img src="img/two-dots.png" alt=""></span>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <input type="checkbox" id="searchCheck">
+                <input type="text" placeholder="Search...">
+                <label for="searchCheck"><i class="icon ion-ios-search" id="search"></i></label>
+                <i class="ion-ios-notifications-outline" id="bell" onmouseover="changeIcon()"
+                    onmouseout="restoreIcon()"></i>
+                <img src="img/profile-pic-2.png" alt="profile-img">
+            </div>
+        </section>
+
+        <section class="first-tabs-alt">
+            <div class="left-part">
+                <i class="icon ion-ios-search" id="search"></i>
+                <img src="img/profile-pic-2.png" alt="profile-img">
+                <i class="ion-ios-notifications-outline" id="bell" style="margin-left: 2rem;"></i>
+            </div>
+
+            <div class="right-part">
+                <input type="checkbox" id="dropmenu">
+                <label for="dropmenu"><i class="icon ion-md-more"></i></label>
+                <div class="dropdown-box">
+                    <div class="dropdown-item">
+                        <span>Balance:</span>
+                        <strong>5.315</strong>
+                    </div>
+                    <div class="dropdown-item">
+                        <span>TCV:</span>
+                        <strong>4.341</strong>
+                    </div>
+                    <div class="dropdown-item">
+                        <span>TPV:</span>
+                        <strong>5.336</strong>
+                    </div>
+                    <div class="dropdown-item">
+                        <span>BTC:</span>
+                        <strong>$10,759</strong>
+                    </div>
+                    <div class="dropdown-item">
+                        <span><img src="img/two-dots.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dash-info">
+            <div class="info-group">
+                <div class="dash-title">
+                    <h1>Overview</h1>
+                    <p>Market: Binance BTC</p>
+                </div>
+
+                <div class="switch-btns">
+                    <div class="switch-box" style="margin-right: 2.5rem;">
+                        <input type="checkbox" id="saleCheck">
+                        <label for="saleCheck" class="switch-label">Sale mode</label>
+                        <label for="saleCheck" class="switch" id="btn1"></label>
+                    </div>
+                    <div class="switch-box">
+                        <input type="checkbox" id="somoCheck">
+                        <label for="somoCheck" class="switch-label" id="somo">SOMO</label>
+                        <label for="somoCheck" class="switch" id="btn2"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-wrapper">
+            <div class="stats-group">
+                <div class="stat-box">
+                    <div class="stat-elements">
+                        <img src="img/stat-icon%20(4).png" alt="">
+                        <figure></figure>
+                    </div>
+                    <div class="stat-data">
+                        <h2 class="heading">Pairs</h2>
+                        <dl>
+                            <dt><span>CV</span> 3.20236584</dt>
+                            <dt>0.01004484 <span>1.93 %</span></dt>
+                            <dt><span>BC</span> 3.202314398</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-elements">
+                        <img src="img/stat-icon%20(3).png" alt="">
+                        <figure></figure>
+                    </div>
+                    <div class="stat-data">
+                        <h2 class="heading">DCA</h2>
+                        <dl>
+                            <dt><span>CV</span> 0.80236486</dt>
+                            <dt>-0.01066484 <span>-14.93 %</span></dt>
+                            <dt><span>BC</span> 0.81231486</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-elements">
+                        <img src="img/stat-icon%20(2).png" alt="">
+                        <figure></figure>
+                    </div>
+                    <div class="stat-data">
+                        <h2 class="heading">Pending</h2>
+                        <dl>
+                            <dt><span>CV</span> 2.20236583</dt>
+                            <dt>0.01072484 <span>4.93 %</span></dt>
+                            <dt><span>BC</span> 2.20231695</dt>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat-elements">
+                        <img src="img/stat-icon%20(1).png" alt="">
+                        <figure></figure>
+                    </div>
+                    <div class="stat-data">
+                        <h2 class="heading">Sales</h2>
+                        <dl>
+                            <dt><span>CV</span> 0.13648684</dt>
+                            <dt>0.02034484 <span>2.93 %</span></dt>
+                            <dt><span>BC</span> 0.12231597</dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-container">
+            <div class="card-group">
+                <div class="single-card first-card">
+                    <div class="card-head">
+                        <div class="dot-icon">
+                            <img src="img/two-dots-alt.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="img-area" id="dollar">
+                                <img src="img/dollar-icon.png" alt="">
+                            </div>
+                            <div class="head-text">
+                                <h3>10,759.5</h3>
+                                <p>BTC USD Price</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="first-info">
+                            <h3>0.82% <i class="ion-md-arrow-forward" id="red-arrow"></i></h3>
+                            <cite>Trend USD last 1H</cite>
+                        </div>
+                        <div class="last-info">
+                            <h3>5.71% <i class="ion-md-arrow-forward" id="green-arrow"></i></h3>
+                            <cite>Trend USD last 24H</cite>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-card card-alt">
+                    <div class="card-head">
+                        <div class="dot-icon">
+                            <img src="img/two-dots-alt.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="img-area" id="bitcoin">
+                                <img src="img/bitcoin-icon.png" alt="">
+                            </div>
+                            <div class="head-text">
+                                <h3>5.315<span>96495</span></h3>
+                                <p>Current Balance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="first-info">
+                            <div class="info-media">
+                                <img src="img/bitcoin-small.png" alt="">
+                            </div>
+                            <div class="info-text">
+                                <h3>4.909<span>30495</span></h3>
+                                <cite>Total Current Value</cite>
+                            </div>
+                        </div>
+                        <div class="last-info">
+                            <div class="info-media">
+                                <img src="img/bitcoin-small.png" alt="">
+                            </div>
+                            <div class="info-text">
+                                <h3>3.236<span>48496</span></h3>
+                                <cite>Total Pending Value</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-card card-alt">
+                    <div class="card-head">
+                        <div class="dot-icon">
+                            <img src="img/two-dots-alt.png" alt="">
+                        </div>
+                        <div class="card-title">
+                            <div class="img-area" id="pie">
+                                <img src="img/pie-icon.png" alt="">
+                            </div>
+                            <div class="head-text">
+                                <h3>0.515<span>96495</span></h3>
+                                <p>Profit Last Week</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="first-info">
+                            <div class="info-media">
+                                <img src="img/bitcoin-small.png" alt="">
+                            </div>
+                            <div class="info-text">
+                                <h3>0.099<span>30495</span></h3>
+                                <cite>Profit Yesterday</cite>
+                            </div>
+                        </div>
+                        <div class="last-info">
+                            <div class="info-media">
+                                <img src="img/bitcoin-small.png" alt="">
+                            </div>
+                            <div class="info-text">
+                                <h3>0.136<span>48496</span></h3>
+                                <cite>Profit Today</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+
+<!-- Mirrored from hkoikl.web.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 19:59:44 GMT -->
+</html>
+
